@@ -1,0 +1,20 @@
+---
+- name: Create Azure VM
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: Create VM
+    azure_rm_virtualmachine:
+      resource_group: myResourceGroup
+      name: myVM
+      vm_size: Standard_DS1_v2
+      os_type: Windows
+      admin_username: azureuser
+      admin_password: Azurecloud@2018
+      network_interfaces: myNIC
+      image:
+        offer: WindowsServer
+        publisher: MicrosoftWindowsServer
+        sku: 2016-Datacenter
+	version: latest
+    
