@@ -50,11 +50,11 @@
       resource_group: myResourceGroup
       name: myVM
       vm_size: Standard_DS1_v2
-      admin_username: azure
+      admin_username: azureuser
       admin_password: Azurecloud@2018
       network_interfaces: myNIC
       image:
-        offer: WindowsServer
-        publisher: MicrosoftWindowsServer
-        sku: 2016-Datacenter
-        version: latest
+      offer: CentOS
+      publisher: OpenLogic
+      sku: '7.1'
+      version: latest
