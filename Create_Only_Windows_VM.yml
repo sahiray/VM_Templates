@@ -16,5 +16,5 @@
         offer: WindowsServer
         publisher: MicrosoftWindowsServer
         sku: 2016-Datacenter
-	version: latest
+        version: latest
     
