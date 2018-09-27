@@ -31,9 +31,9 @@
       resource_group: myResourceGroup
       name: myNetworkSecurityGroup
       rules:
-        - name: RDP
+        - name: SSH
           protocol: Tcp
-          destination_port_range: 3389
+          destination_port_range: 22
           access: Allow
           priority: 1001
           direction: Inbound
